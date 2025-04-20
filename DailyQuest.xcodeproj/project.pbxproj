@@ -10,9 +10,33 @@
 		04CF54282DB51C60005727B5 /* DailyQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		04CF58E22DB52095005727B5 /* Exceptions for "DailyQuest" folder in "DailyQuest" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				.gitignore,
+			);
+			target = 04CF54272DB51C60005727B5 /* DailyQuest */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		04CF58E32DB52095005727B5 /* Exceptions for "DailyQuest" folder in "Compile Sources" phase from "DailyQuest" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 04CF54242DB51C60005727B5 /* Sources */;
+			membershipExceptions = (
+				.gitignore,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		04CF542A2DB51C60005727B5 /* DailyQuest */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				04CF58E22DB52095005727B5 /* Exceptions for "DailyQuest" folder in "DailyQuest" target */,
+				04CF58E32DB52095005727B5 /* Exceptions for "DailyQuest" folder in "Compile Sources" phase from "DailyQuest" target */,
+			);
 			path = DailyQuest;
 			sourceTree = "<group>";
 		};
