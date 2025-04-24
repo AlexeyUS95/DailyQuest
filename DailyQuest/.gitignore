@@ -1,0 +1,35 @@
+# Xcode
+*.xcworkspace
+*.xcuserdata
+*.xccheckout
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+
+# Derived data
+DerivedData/
+build/
+
+# Swift Package Manager
+.build/
+Packages/
+.swiftpm/
+
+# CocoaPods (если будешь использовать)
+Pods/
+Podfile.lock
+
+# Carthage (если вдруг)
+Carthage/
+
+# Firebase
+GoogleService-Info.plist
+
+# Misc
+*.DS_Store
+.idea/
+*.swp
+*.lock
+.env
+
+# SwiftPM binary artifacts
+Artifacts.xcarchive
