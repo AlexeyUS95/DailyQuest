@@ -15,7 +15,7 @@ struct AuthRootView: View {
         Button {
             viewModel.login()
         } label: {
-            Text("Login")
+            Text("Log in")
         }
     }
 }
