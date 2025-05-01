@@ -12,6 +12,9 @@ extension AuthRootView {
 
     final class AuthRootViewModel: ObservableObject {
 
+        @Published var email: String = ""
+        @Published var password: String = ""
+
         private let coordinator: AuthCoordinator
         private let diContainer: DIContainer
 
@@ -20,7 +23,7 @@ extension AuthRootView {
             self.diContainer = diContainer
         }
 
-        func login() {
+        func login(email: String, password: String) {
             let token = "12345"
             diContainer.services.accountService.saveAuthCredentials(token)
         }
