@@ -28,6 +28,7 @@ struct AuthRootView: View {
                 Spacer()
                 signIn
             }
+            .hideKeyboardOnTap()
         }
     }
 
