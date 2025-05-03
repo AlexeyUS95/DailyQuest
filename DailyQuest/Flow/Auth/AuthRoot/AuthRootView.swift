@@ -33,7 +33,7 @@ struct AuthRootView: View {
     }
 
     @ViewBuilder private var logo: some View {
-        Text("LOGO")
+        Text("Log in")
             .font(UIFont.header.font())
             .padding(.top, 50)
     }
@@ -42,7 +42,8 @@ struct AuthRootView: View {
         CustomTextField(
             text: $viewModel.email,
             errorMessage: $viewModel.emailErrorMessage,
-            placeholder: "Email"
+            placeholder: "Email",
+            keyboardType: .emailAddress
         )
         .padding(.horizontal, 16)
     }
