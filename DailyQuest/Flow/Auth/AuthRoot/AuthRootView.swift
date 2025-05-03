@@ -2,7 +2,7 @@
 //  AuthRootView.swift
 //  DailyQuest
 //
-//  Created by mac on 22.04.2025.
+//  Created by Alexey Usenko on 22.04.2025.
 //
 
 import SwiftUI
@@ -38,13 +38,21 @@ struct AuthRootView: View {
     }
 
     @ViewBuilder private var email: some View {
-        CustomTextField(text: $viewModel.email, placeholder: "Email")
-            .padding(.horizontal, 16)
+        CustomTextField(
+            text: $viewModel.email,
+            errorMessage: $viewModel.emailErrorMessage,
+            placeholder: "Email"
+        )
+        .padding(.horizontal, 16)
     }
 
     @ViewBuilder private var password: some View {
-        CustomTextField(text: $viewModel.password, placeholder: "Password")
-            .padding(.horizontal, 16)
+        CustomTextField(
+            text: $viewModel.password,
+            errorMessage: $viewModel.passwordErrorMessage,
+            placeholder: "Password"
+        )
+        .padding(.horizontal, 16)
     }
 
     @ViewBuilder private var forgotPassword: some View {

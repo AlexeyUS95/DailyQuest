@@ -22,7 +22,8 @@ struct DailyQuestApp: App {
         let storage = AppStorage.shared.userStorage
 
         let services = DIServices.Services(
-            accountService: AccountServiceImpl(userStorage: storage)
+            accountService: AccountServiceImpl(userStorage: storage),
+            validationService: ValidationServiceImpl()
         )
 
         let networkServices = DIServices.NetworkServices(

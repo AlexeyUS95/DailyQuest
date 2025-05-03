@@ -14,7 +14,8 @@ final class MockDIContainer: DIContainer {
     init() {
         storage = MockStorage()
         services = DIServices.Services(
-            accountService: MockAccountService()
+            accountService: MockAccountService(),
+            validationService: MockValidationService()
         )
         networkServices = DIServices.NetworkServices(
             authService: MockAuthService()

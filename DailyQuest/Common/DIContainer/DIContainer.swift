@@ -19,10 +19,15 @@ enum DIServices {
         /// User authorization service
         let accountService: AccountService
 
+        /// Use regular expressions for validation strings
+        let validationService: ValidationService
+
         init(
-            accountService: AccountService
+            accountService: AccountService,
+            validationService: ValidationService
         ) {
             self.accountService = accountService
+            self.validationService = validationService
         }
     }
 
